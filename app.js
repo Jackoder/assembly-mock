@@ -54,37 +54,34 @@ const request = require('request');
 const zlib = require('zlib');
 
 server.use(middlewares)
-// Add custom routes before JSON Server router
-// server.get('/_config', (req, res) => {
-//     let config = router.db.get('_config');
-//     await request(config.modules, function (error, response, body) {
-//         if (!error && response.statusCode == 200) {
-//             console.log(body) // Show the HTML for the baidu homepage.
-//         }
-//     })
-//     res.jsonp(router.db.get('_config').modules)
-// });
 //反向代理
 server.use('/proxy', function(req, res) {
   let url = req.query.url;
   req.pipe(request(url)).pipe(res);
-  // req.pipe(request(url, { encoding: null }, (error, response, body) => {
-  //   if (res._headers['content-encoding']) {
-  //     let result =  zlib.unzipSync(body);
-  //     return {
-  //       code: 200,
-  //       data: JSON.parse(result.toString())
-  //     }
-  //   }
-  // })).pipe(res);
 });
+
 router.render = function (req, res) {
-  res.jsonp({
-    code: res.statusCode,
-    data: res.locals.data
-  });
+  if (Array.isArray(res.locals.data)) {
+    res.jsonp({
+      code: res.statusCode,
+      data: {
+        items: res.locals.data,
+        count: res._headers['x-total-count'] ? res._headers['x-total-count'].value() : res.locals.data.length
+      }
+    });
+  } else {
+    res.jsonp({
+      code: res.statusCode,
+      data: res.locals.data
+    });
+  }
 };
+
+const rewriter = jsonServer.rewriter(require('./routes.json'))
+server.use(rewriter)
+
 server.use(router)
+
 
 // server.listen(3000, () => {
 //   console.log('JSON Server is running')
