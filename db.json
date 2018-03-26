@@ -1,0 +1,64 @@
+{
+  "_config": {
+    "modules": "https://coding.net/u/Jackoder/p/assembly-config/git/raw/master/mock/modules.json",
+    "viewmodels": "https://coding.net/u/Jackoder/p/assembly-config/git/raw/master/mock/viewmodels.json"
+  },
+  "modules": {
+    "comments": {
+      "dataType": "list",
+      "url": "{test.json_server_host}/comments",
+      "subModelList": [
+        {
+          "key": "comment_item",
+          "describe": "评论",
+          "model": "comments"
+        }
+      ]
+    }
+  },
+  "viewmodels": {
+    "comment_item": {
+      "id": "列表项ID",
+      "body": "内容",
+      "postId": "文章ID"
+    }
+  },
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "json-server",
+      "author": {
+        "key": "value"
+      },
+      "id": 2
+    },
+    {
+      "title": "json-server",
+      "author": {
+        "key": {
+          "a": 1
+        }
+      },
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": true,
+      "postId": 1
+    },
+    {
+      "body": 1,
+      "postId": 1,
+      "id": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
