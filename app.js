@@ -68,10 +68,11 @@ router.render = function (req, res) {
       count: res._headers['x-total-count'] ? res._headers['x-total-count'].value() : res.locals.data.length
     });
   } else {
-    res.jsonp({
-      code: res.statusCode,
-      data: res.locals.data
-    });
+    res.jsonp(res.locals.data);
+    // res.jsonp({
+    //   code: res.statusCode,
+    //   data: res.locals.data
+    // });
   }
 };
 
