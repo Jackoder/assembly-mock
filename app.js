@@ -64,10 +64,8 @@ router.render = function (req, res) {
   if (Array.isArray(res.locals.data)) {
     res.jsonp({
       code: res.statusCode,
-      data: {
-        items: res.locals.data,
-        count: res._headers['x-total-count'] ? res._headers['x-total-count'].value() : res.locals.data.length
-      }
+      data: res.locals.data,
+      count: res._headers['x-total-count'] ? res._headers['x-total-count'].value() : res.locals.data.length
     });
   } else {
     res.jsonp({

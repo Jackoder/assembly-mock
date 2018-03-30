@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import { Tabs, Tab, Table, Button, ButtonGroup } from 'react-bootstrap';
 import ReactJson from 'react-json-view';
 import Store from './Store';
@@ -25,20 +24,13 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    // this.setState({
-    //   modules: require('./config/modules.json'),
-    //   viewmodels: require('./config/viewmodels.json')
-    // })
     this.fetchConfig();
     this.fetchDb();
-    console.log('DOM', ReactDOM.findDOMNode(this));
   }
 
   fetchConfig = () => {
     this.store.getConfigPath()
       .then(config => {
-        // this.store.proxy(config.modules).then(ret => console.log('Test', ret));
-        // this.store.proxy(config.viewmodels).then(ret => console.log('Test', ret));
         Promise.all([this.store.proxy(config.modules), this.store.proxy(config.viewmodels)])
           .then(values => {
             this.setState({modules: values[0], viewmodels: values[1]});
@@ -214,7 +206,7 @@ export default class App extends Component {
         <div style={{overflow: 'scroll'}}>
           {table}
         </div>,
-        <Button key='new' bsStyle="primary" onClick={e => this.createModal.handleShow(moduleName, viewmodel)}>新增</Button>
+        <Button key='new' bsStyle="primary" style={{marginTop: 10}} onClick={e => this.createModal.handleShow(moduleName, viewmodel)}>新增</Button>
       ]
     );
   }

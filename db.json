@@ -20,6 +20,150 @@
   "profile": {
     "name": "typicode"
   },
-  "carousel": [],
-  "news": []
+  "carousel": [
+    {
+      "dentry_id": 1,
+      "cmp": "http://www.baidu.com",
+      "url": "http://www.baidu.com",
+      "description": "百度",
+      "weight": 1,
+      "send_symbols": null,
+      "addition": null,
+      "id": 1
+    },
+    {
+      "dentry_id": 2,
+      "cmp": "http://www.taobao.com",
+      "url": "http://www.taobao.com",
+      "description": "淘宝",
+      "weight": 2,
+      "send_symbols": null,
+      "addition": null,
+      "id": 2
+    },
+    {
+      "dentry_id": 1,
+      "cmp": "http://www.baidu.com",
+      "url": "http://www.baidu.com",
+      "description": "百度",
+      "weight": 1,
+      "send_symbols": null,
+      "addition": null,
+      "id": 3
+    }
+  ],
+  "news": [
+    {
+      "id": "5a14fcc6a310693b1695d659",
+      "create_time": 1511324870740,
+      "update_time": 1515998814563,
+      "org_id": "481036739763",
+      "author": "",
+      "creator_id": "2024503922",
+      "creator_name": "组织管理员",
+      "title": "这是一条短的新闻标题",
+      "sub_title": "",
+      "summary": "党史上的今天abcd",
+      "thumbnail": "",
+      "carousel": "",
+      "tags": [],
+      "content": "<p>党史上的今天阿什顿发abcd</p>",
+      "images": [],
+      "type": 1,
+      "categories": [
+        "59786e93a3100d94dffd0643"
+      ],
+      "topics": [],
+      "status": 0,
+      "source": "",
+      "hits": 63,
+      "icons": [],
+      "icon_detail": {
+        "basic_weight": 0,
+        "weight": 0
+      },
+      "topic_flag": -1,
+      "publish_time": 1511324870740,
+      "layout": 2,
+      "scope_id": "0",
+      "scope_type": "0",
+      "message_flag": false,
+      "event_time": 1511324870740,
+      "event_date": "11-22"
+    },
+    {
+      "id": "5a14fcc1a310693b1695d658",
+      "create_time": 1511324865878,
+      "update_time": 1513925150011,
+      "org_id": "481036739763",
+      "author": "",
+      "creator_id": "2024503922",
+      "creator_name": "组织管理员",
+      "title": "这是一条标准的新闻标题大概内容能够凑齐两行就差不多了哈哈哈啊哈哈",
+      "sub_title": "",
+      "summary": "党史上的今天巴拉巴拉",
+      "thumbnail": "",
+      "carousel": "",
+      "tags": [],
+      "content": "<p>党史上的今天</p>",
+      "images": [],
+      "type": 1,
+      "categories": [
+        "59786e93a3100d94dffd0643"
+      ],
+      "topics": [],
+      "status": 0,
+      "source": "",
+      "hits": 35,
+      "icons": [],
+      "icon_detail": {
+        "basic_weight": 0,
+        "weight": 0
+      },
+      "topic_flag": -1,
+      "publish_time": 1511324865878,
+      "layout": 2,
+      "scope_id": "0",
+      "scope_type": "0",
+      "message_flag": false,
+      "event_time": 1511324865878,
+      "event_date": "11-22"
+    },
+    {
+      "id": "5982bb79a310f4cbb6ddc2d5",
+      "create_time": 1501739897984,
+      "update_time": 1515642418378,
+      "org_id": "481036739763",
+      "author": "组织管理员",
+      "creator_id": "2024503922",
+      "creator_name": "组织管理员",
+      "title": "教育部党组扩大会学习贯彻习近平 总书记在省部级主要领导干部专题研讨班上重要讲话精神",
+      "sub_title": "",
+      "summary": "教育部党组扩大会学习贯彻习近平总书记在省部级主要领导干部专题研讨班上重要讲话精神",
+      "thumbnail": "97b7d2ed-e708-409e-95d2-3c3ae28b4927",
+      "carousel": "",
+      "tags": [],
+      "content": "<p>　　继教育部党组日前下发关于深入学习贯彻习近平总书记在省部级主要领导干部专题研讨班上重要讲话精神的通知后，7月31日，教育部党组书记、部长陈宝生主持召开党组扩大会，传达学习习近平总书记重要讲话精神，研究部署贯彻落实工作。</p>\n\n<p>　　陈宝生在讲话中指出，习近平总书记在专题研讨班上的重要讲话，为党的十九大胜利召开奠定了重要的政治、思想和理论基础。深入学习贯彻习近平总书记这一重要讲话精神，是当前和今后一个时期教育系统的重大政治任务。各地教育部门和各级各类学校要切实提高政治站位，迅速掀起学习热潮。要加强组织领导，开展系统培训，增强宣传力度，深化理论研究，深入学习领会总书记重要讲话的丰富内涵和重大意义，切实把思想和行动统一到总书记重要讲话精神上来，更加自觉地在思想上政治上行动上同以习近平同志为核心的党中央保持高度一致，把思想和行动统一到党中央对教育改革发展的新要求新任务上来。</p>\n\n<p>　　陈宝生强调，各地教育部门和各级各类学校要按照部党组通知要求，全面贯彻落实习近平总书记重要讲话精神，紧密联系工作实际，把学习贯彻总书记重要讲话精神与迎接宣传党的十九大胜利召开、开展&ldquo;治国理政新理念新思想新战略重大主题宣传活动&rdquo;、&ldquo;两学一做&rdquo;学习教育常态化制度化、推动教育改革发展结合起来，把总书记重要讲话精神转化为推动工作的强大动力，办好公平优质、人民满意的教育，以优异成绩迎接党的十九大胜利召开。</p>",
+      "images": [],
+      "type": 1,
+      "categories": [
+        "59786e93a3100d94dffd0643"
+      ],
+      "topics": [],
+      "status": 0,
+      "source": "",
+      "hits": 37,
+      "icons": [],
+      "icon_detail": {
+        "basic_weight": 0,
+        "weight": 0
+      },
+      "topic_flag": -1,
+      "publish_time": 1501739897984,
+      "layout": 0,
+      "scope_id": "0",
+      "scope_type": "0",
+      "message_flag": false
+    }
+  ]
 }
