@@ -6,6 +6,7 @@ import Store from './Store';
 import {CreateItemModal, DeleteItemModal, ConfigModal} from './modal';
 import logo from './logo.svg';
 import './App.css';
+import _ from 'lodash';
 
 export default class App extends Component {
 
@@ -118,7 +119,17 @@ export default class App extends Component {
       children = this._renderSubModelList(name, module.subModelList);
     } else {
       //TODO
-      children = JSON.stringify(module);
+      let viewmodel = this.state.viewmodels[_.get(module, 'subModelList[0].key')];
+      children = [
+        <ReactJson
+          style={{ flex: 1, marginTop: 10, marginBottom: 10 }}
+          src={this.state.db[name]}
+          name={'模块内容'}
+          enableClipboard={false}
+          displayDataTypes={false}
+        />,
+        <Button key='new' bsStyle="primary" onClick={e => this.createModal.handleShow(name, viewmodel, this.state.db[name])}>修改</Button>
+      ];
     }
     return (
       <Tab key={index} eventKey={name} title={name}>

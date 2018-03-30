@@ -93,9 +93,9 @@ export default class CreateItemModal extends Component {
 
   render = () => {
     const {moduleName, viewmodel, data, commitMode} = this.state;
-    if (!viewmodel) {
-      return null;
-    }
+    // if (!viewmodel) {
+    //   return null;
+    // }
 
     // const popover = (
     //   <Popover id="modal-popover" title="popover">
@@ -112,15 +112,19 @@ export default class CreateItemModal extends Component {
           </Modal.Header>
           <Modal.Body>
             <Nav bsStyle="tabs" style={{marginBottom: 10}} activeKey={this.state.editMode} onSelect={this.onEditModeChanged}>
-              <NavItem eventKey={MODE_KV}>
-                Key-Value
-              </NavItem>
+              {
+                viewmodel ? (
+                  <NavItem eventKey={MODE_KV}>
+                    Key-Value
+                  </NavItem>
+                ) : null
+              }
               <NavItem eventKey={MODE_JSON}>
                 JSON
               </NavItem>
             </Nav>
             {
-              this.state.editMode === MODE_KV ? Object.keys(viewmodel).map((key, index) => (
+              viewmodel && this.state.editMode === MODE_KV ? Object.keys(viewmodel).map((key, index) => (
                 <FieldGroup
                   id={key}
                   type="text"
