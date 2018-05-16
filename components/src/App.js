@@ -67,7 +67,8 @@ export default class App extends Component {
         <header style={{ flex: 1, textAlign: 'center', backgroundColor: '#222', height: 150, padding: 20, color: 'white' }}>
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to Mock Data</h1>
-          <span style={{position: 'absolute', right: 10, top: 10, cursor: 'pointer'}} onClick={() => this.configModal.handleShow()}>数据源地址</span>
+          <span style={{position: 'absolute', right: 10, top: 10, cursor: 'pointer'}} onClick={() => window.open('http://git.sdp.nd/mobile/module-assembly/wikis/mock-data')}>帮助文档</span>
+          <span style={{position: 'absolute', right: 80, top: 10, cursor: 'pointer'}} onClick={() => this.configModal.handleShow()}>数据源地址</span>
         </header>
         {
           this._renderContent()
