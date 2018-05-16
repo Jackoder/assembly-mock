@@ -14,6 +14,7 @@ import {
   NavItem
 } from 'react-bootstrap';
 import ReactJson from 'react-json-view';
+import JSONInput from 'react-json-editor-ajrm';
 import Store from '../Store';
 
 const MODE_KV = 'kv';
@@ -104,6 +105,41 @@ export default class CreateItemModal extends Component {
     // );
     // const tooltip = <Tooltip id="modal-tooltip">wow.</Tooltip>;
 
+    let editor = null;
+    if (viewmodel && this.state.editMode === MODE_KV) {
+      editor = Object.keys(viewmodel).map((key, index) => (
+        <FieldGroup
+          id={key}
+          type="text"
+          name={key}
+          label={viewmodel[key]}
+          defaultValue={data[key]}
+          onChange={this.handleInputChange}
+        />
+      ));
+    // } else if (this.state.editMode === MODE_JSON) {
+    //   editor = <ReactJson
+    //     style={{ flex: 1}}
+    //     src={this.state.formData}
+    //     onEdit={params => {
+    //       this.setState({ formData: params.updated_src })
+    //     }}
+    //   />;
+    } else {
+      editor = <JSONInput
+        id={'jsonInput'}
+        style={{outerBox: {flex: 1}}}
+        width='570px'
+        height='550px'
+        viewOnly={false}
+        confirmGood={true}
+        onChange={params => {
+          this.setState({ formData: params.jsObject })
+        }}
+        placeholder={this.state.formData}
+      />;
+    }
+
     return (
       <Modal show={this.state.show} onHide={this.handleClose}>
         <form onSubmit={this.onSubmit}>
@@ -119,30 +155,14 @@ export default class CreateItemModal extends Component {
                   </NavItem>
                 ) : null
               }
+              {/* <NavItem eventKey={MODE_JSON}>
+                JSON
+              </NavItem> */}
               <NavItem eventKey={MODE_JSON}>
                 JSON
               </NavItem>
             </Nav>
-            {
-              viewmodel && this.state.editMode === MODE_KV ? Object.keys(viewmodel).map((key, index) => (
-                <FieldGroup
-                  id={key}
-                  type="text"
-                  name={key}
-                  label={viewmodel[key]}
-                  defaultValue={data[key]}
-                  onChange={this.handleInputChange}
-                />
-              )) : (
-                <ReactJson
-                  style={{ flex: 1}}
-                  src={this.state.formData}
-                  onEdit={params => {
-                    this.setState({ formData: params.updated_src })
-                  }}
-                  />
-              )
-            }
+            { editor }
           </Modal.Body>
           <Modal.Footer>
             <Button bsStyle="primary" onClick={this.onSubmit}>提交</Button>
