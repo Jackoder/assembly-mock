@@ -22,8 +22,8 @@
   },
   "carousel": [
     {
-      "dentry_id": 1,
-      "cmp": "http://www.baidu.com",
+      "dentry_id": "ca2c285e-5813-4ed3-a470-76cd69bfd6c6",
+      "cmp": "cmp://com.nd.hy.e-exam/exam_preparation?exam_id=66c4f16c-50b0-446f-aeef-af8ecddebeef",
       "url": "http://www.baidu.com",
       "description": "百度",
       "weight": 1,
@@ -32,24 +32,14 @@
       "id": 1
     },
     {
-      "dentry_id": 2,
-      "cmp": "http://www.taobao.com",
+      "dentry_id": "d273d11b-339d-44b2-a605-896efd490060",
+      "cmp": "cmp://com.nd.social.appbox/appboxList",
       "url": "http://www.taobao.com",
       "description": "淘宝",
       "weight": 2,
       "send_symbols": null,
       "addition": null,
       "id": 2
-    },
-    {
-      "dentry_id": 1,
-      "cmp": "http://www.baidu.com",
-      "url": "http://www.baidu.com",
-      "description": "百度",
-      "weight": 1,
-      "send_symbols": null,
-      "addition": null,
-      "id": 3
     }
   ],
   "news": [
@@ -58,15 +48,18 @@
       "create_time": 1511324870740,
       "update_time": 1515998814563,
       "org_id": "481036739763",
-      "author": "",
+      "author": "小明",
       "creator_id": "2024503922",
       "creator_name": "组织管理员",
-      "title": "这是一条短的新闻标题",
+      "title": "我是有图片的新闻",
       "sub_title": "",
       "summary": "党史上的今天abcd",
       "thumbnail": "",
       "carousel": "",
-      "tags": [],
+      "tags": [
+        "培训",
+        "教育"
+      ],
       "content": "<p>党史上的今天阿什顿发abcd</p>",
       "images": [],
       "type": 1,
@@ -75,9 +68,9 @@
       ],
       "topics": [],
       "status": 0,
-      "source": "",
+      "source": "海峡都市报",
       "hits": 63,
-      "icons": [],
+      "icons": "http://bpic.588ku.com/element_origin_min_pic/16/12/08/945c6e1790f9fd4acb8e6e2f77191781.jpg",
       "icon_detail": {
         "basic_weight": 0,
         "weight": 0
@@ -89,14 +82,22 @@
       "scope_type": "0",
       "message_flag": false,
       "event_time": 1511324870740,
-      "event_date": "11-22"
+      "event_date": "11-22",
+      "thumb_up": "1000",
+      "coin": "10000",
+      "comment_count": "100",
+      "person_count": "10",
+      "period": "1",
+      "is_concerned": "true",
+      "is_collected": false,
+      "recommended": true
     },
     {
       "id": "5a14fcc1a310693b1695d658",
       "create_time": 1511324865878,
       "update_time": 1513925150011,
       "org_id": "481036739763",
-      "author": "",
+      "author": "小红",
       "creator_id": "2024503922",
       "creator_name": "组织管理员",
       "title": "这是一条标准的新闻标题大概内容能够凑齐两行就差不多了哈哈哈啊哈哈",
@@ -104,7 +105,12 @@
       "summary": "党史上的今天巴拉巴拉",
       "thumbnail": "",
       "carousel": "",
-      "tags": [],
+      "tags": [
+        "誓言",
+        "共产党",
+        "党员",
+        "共青团"
+      ],
       "content": "<p>党史上的今天</p>",
       "images": [],
       "type": 1,
@@ -113,9 +119,9 @@
       ],
       "topics": [],
       "status": 0,
-      "source": "",
+      "source": "福州日报",
       "hits": 35,
-      "icons": [],
+      "icons": "",
       "icon_detail": {
         "basic_weight": 0,
         "weight": 0
@@ -125,9 +131,17 @@
       "layout": 2,
       "scope_id": "0",
       "scope_type": "0",
-      "message_flag": false,
+      "message_flag": true,
       "event_time": 1511324865878,
-      "event_date": "11-22"
+      "event_date": "11-22",
+      "thumb_up": "2000",
+      "coin": "20000",
+      "comment_count": "200",
+      "person_count": "20",
+      "period": "2",
+      "is_concerned": false,
+      "is_collected": true,
+      "recommended": false
     },
     {
       "id": "5982bb79a310f4cbb6ddc2d5",
@@ -143,7 +157,7 @@
       "thumbnail": "97b7d2ed-e708-409e-95d2-3c3ae28b4927",
       "carousel": "",
       "tags": [],
-      "content": "<p>　　继教育部党组日前下发关于深入学习贯彻习近平总书记在省部级主要领导干部专题研讨班上重要讲话精神的通知后，7月31日，教育部党组书记、部长陈宝生主持召开党组扩大会，传达学习习近平总书记重要讲话精神，研究部署贯彻落实工作。</p>\n\n<p>　　陈宝生在讲话中指出，习近平总书记在专题研讨班上的重要讲话，为党的十九大胜利召开奠定了重要的政治、思想和理论基础。深入学习贯彻习近平总书记这一重要讲话精神，是当前和今后一个时期教育系统的重大政治任务。各地教育部门和各级各类学校要切实提高政治站位，迅速掀起学习热潮。要加强组织领导，开展系统培训，增强宣传力度，深化理论研究，深入学习领会总书记重要讲话的丰富内涵和重大意义，切实把思想和行动统一到总书记重要讲话精神上来，更加自觉地在思想上政治上行动上同以习近平同志为核心的党中央保持高度一致，把思想和行动统一到党中央对教育改革发展的新要求新任务上来。</p>\n\n<p>　　陈宝生强调，各地教育部门和各级各类学校要按照部党组通知要求，全面贯彻落实习近平总书记重要讲话精神，紧密联系工作实际，把学习贯彻总书记重要讲话精神与迎接宣传党的十九大胜利召开、开展&ldquo;治国理政新理念新思想新战略重大主题宣传活动&rdquo;、&ldquo;两学一做&rdquo;学习教育常态化制度化、推动教育改革发展结合起来，把总书记重要讲话精神转化为推动工作的强大动力，办好公平优质、人民满意的教育，以优异成绩迎接党的十九大胜利召开。</p>",
+      "content": "<p>　　继教育部党组日前下发关于深入学习贯彻习近平总书记在省部级主要领导干部专题研讨班上重要讲话精神的通知后，7月31日，教育部党组书记、部长陈宝生主持召开党组扩大会，传达学习习近平总书记重要讲话精神，研究部署贯彻落实工作。</p>",
       "images": [],
       "type": 1,
       "categories": [
@@ -153,7 +167,7 @@
       "status": 0,
       "source": "",
       "hits": 37,
-      "icons": [],
+      "icons": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4091122951,237323215&fm=27&gp=0.jpg",
       "icon_detail": {
         "basic_weight": 0,
         "weight": 0
@@ -163,7 +177,383 @@
       "layout": 0,
       "scope_id": "0",
       "scope_type": "0",
-      "message_flag": false
+      "message_flag": false,
+      "thumb_up": "3000",
+      "coin": "30000",
+      "comment_count": "300",
+      "person_count": "30",
+      "period": "3",
+      "is_concerned": "false",
+      "is_collected": true,
+      "recommended": true
+    },
+    {
+      "author": "作者",
+      "creator_name": "创建者名",
+      "creator_id": "创建者ID",
+      "title": "我是标题",
+      "sub_title": "我是副标题",
+      "summary": "同学们，你们好，我是摘要",
+      "content": "正文",
+      "thumbnail": "封面图片id",
+      "carousel": "轮播图id",
+      "tags": "新闻标签",
+      "type": "新闻类型",
+      "images": "图片",
+      "categories": "新闻所属板块",
+      "topics": "新闻所属专题",
+      "link": "原新闻链接",
+      "source": "来源",
+      "create_time": "1522070409000",
+      "update_time": "1522070409000",
+      "publish_time": "1522070409000",
+      "hits": "400",
+      "topic_flag": "专题标识",
+      "icons": "http://www.08160.cn/uploads/allimg/image/20170726/1501047465117885.jpeg",
+      "icon_detail": "加精置顶排序",
+      "layout": "排版格式代号",
+      "scope_id": "圈子id",
+      "scope_type": "圈子类型",
+      "message_flag": "是否推送通知",
+      "status": "审核状态",
+      "audit_form": "审核单据信息",
+      "relate_news_id": "关联的审核中新闻id",
+      "thumb_up": "4000",
+      "coin": "40000",
+      "comment_count": "400",
+      "person_count": "40",
+      "period": "4",
+      "id": "gv2pZBd",
+      "is_concerned": false,
+      "is_collected": false,
+      "recommended": false
+    },
+    {
+      "author": "作者",
+      "creator_name": "创建者名",
+      "creator_id": "创建者ID",
+      "title": "我是没有图片的标题",
+      "sub_title": "副标题",
+      "summary": "我是没有图片的摘要，很长的摘要很长的摘要很长的摘要很长的摘要很长的摘要很长的摘要很长的摘要很长的摘要很长的摘要很长的摘要很长的摘要",
+      "content": "正文",
+      "thumbnail": "",
+      "carousel": "",
+      "tags": "",
+      "type": "",
+      "images": "",
+      "categories": "",
+      "topics": "",
+      "link": "",
+      "source": "",
+      "create_time": "1522070394000",
+      "update_time": "1522070394000",
+      "publish_time": "1522070394000",
+      "hits": "500",
+      "topic_flag": "",
+      "icons": "",
+      "icon_detail": "",
+      "layout": "",
+      "scope_id": "",
+      "scope_type": "",
+      "message_flag": "true",
+      "status": "",
+      "audit_form": "",
+      "relate_news_id": "",
+      "thumb_up": "5000",
+      "coin": "50000",
+      "comment_count": "500",
+      "person_count": "50",
+      "period": "5",
+      "id": "b~BEfnD",
+      "is_concerned": false,
+      "is_collected": false,
+      "recommended": true
+    }
+  ],
+  "category": {
+    "type": "root",
+    "name": "网龙",
+    "count": 7102,
+    "children": [
+      {
+        "type": "branch",
+        "name": "福建省华渔教育科技有限公司",
+        "count": 3,
+        "children": [
+          {
+            "id": "1",
+            "image": "http://img.zcool.cn/community/015cb758e4c8fda801219c770b4bf4.png",
+            "type": "leaf",
+            "name": "张玉英",
+            "description": "(694401)"
+          },
+          {
+            "id": "2",
+            "image": "http://g.hiphotos.baidu.com/zhidao/pic/item/0823dd54564e92586ffd50c29f82d158cdbf4ed5.jpg",
+            "type": "leaf",
+            "name": "陈鱼",
+            "description": "(一人我饮酒醉)"
+          },
+          {
+            "id": "3",
+            "image": "http://img4.duitang.com/uploads/item/201511/26/20151126112617_vUaQf.jpeg",
+            "type": "leaf",
+            "name": "瞿宜楚",
+            "description": "(我和你吻别在无人的夜)"
+          }
+        ]
+      },
+      {
+        "type": "branch",
+        "name": "851",
+        "count": 0
+      },
+      {
+        "id": "4",
+        "image": "http://imgsrc.baidu.com/forum/w=580/sign=1588b7c5d739b6004dce0fbfd9503526/7bec54e736d12f2eb97e1a464dc2d56285356898.jpg",
+        "type": "leaf",
+        "name": "小霸王",
+        "description": "(佳人)"
+      }
+    ]
+  },
+  "courses": [
+    {
+      "unit_id": "d9de0f2a-82ea-11e6-a6ca-bc305bf4bcd4",
+      "type": "open-course",
+      "title": "DJ脱口秀",
+      "subtitle": "公开课",
+      "cover": "ca2c285e-5813-4ed3-a470-76cd69bfd6c6",
+      "cover_url": "http://betacs.101.com/v0.1/download/actions/direct?dentryId=ca2c285e-5813-4ed3-a470-76cd69bfd6c6&serviceName=dev_content_rn",
+      "description": "关注《DJ脱口秀》，听不凡的理念，点燃设计的梦想！",
+      "start_time": null,
+      "end_time": null,
+      "user_count": 1870,
+      "is_top": true,
+      "extra": null,
+      "time_status": 2,
+      "icons": [],
+      "id": 1,
+      "is_new": true,
+      "is_hot": true,
+      "type_name": "教学课",
+      "res_count": 3
+    },
+    {
+      "unit_id": "165e6953-86cb-489d-81c3-9ebd69b567ab",
+      "type": "open-course",
+      "title": "【第二期】蓝象资本 宁柏宇",
+      "subtitle": "公开课",
+      "cover": "f4d4fad0-3fe4-46c4-bbc4-0121cdd0e914",
+      "cover_url": "http://betacs.101.com/v0.1/download/actions/direct?dentryId=f4d4fad0-3fe4-46c4-bbc4-0121cdd0e914&serviceName=dev_content_rn",
+      "description": "《教育大咖show》是一个为网龙同学拓展教育行业视野、捕捉教育前沿动态的栏目。 ",
+      "start_time": null,
+      "end_time": null,
+      "user_count": 137,
+      "is_top": true,
+      "extra": null,
+      "time_status": 2,
+      "icons": [],
+      "id": 2,
+      "is_new": true,
+      "is_hot": true,
+      "type_name": "线下课",
+      "res_count": 7
+    },
+    {
+      "unit_id": "d9a55f87-3ccd-4fa8-b5e3-5a5db89b799d",
+      "type": "open-course",
+      "title": "【第二期】亚洲最大机考服务供应商ATA 高霏",
+      "subtitle": "公开课",
+      "cover": "1fe17eab-2dc2-4f45-8886-9da16686228f",
+      "cover_url": "http://betacs.101.com/v0.1/download/actions/direct?dentryId=1fe17eab-2dc2-4f45-8886-9da16686228f&serviceName=dev_content_rn",
+      "description": "《教育大咖show》是一个为网龙同学拓展教育行业视野、捕捉教育前沿动态的栏目。",
+      "start_time": null,
+      "end_time": null,
+      "user_count": 91,
+      "is_top": true,
+      "extra": null,
+      "time_status": 2,
+      "icons": [],
+      "id": 3,
+      "is_new": false,
+      "is_hot": false,
+      "type_name": "教学课",
+      "res_count": 9
+    },
+    {
+      "unit_id": "d9de0f2a-82ea-11e6-a6ca-bc305bf4bcd4",
+      "type": "open-course",
+      "title": "DJ脱口秀11",
+      "subtitle": "公开课",
+      "cover": "ca2c285e-5813-4ed3-a470-76cd69bfd6c6",
+      "cover_url": "http://betacs.101.com/v0.1/download/actions/direct?dentryId=ca2c285e-5813-4ed3-a470-76cd69bfd6c6&serviceName=dev_content_rn",
+      "description": "关注《DJ脱口秀》，听不凡的理念，点燃设计的梦想！",
+      "start_time": null,
+      "end_time": null,
+      "user_count": 1870,
+      "is_top": true,
+      "extra": null,
+      "time_status": 2,
+      "icons": [],
+      "is_new": true,
+      "is_hot": true,
+      "type_name": "教学课",
+      "res_count": 3,
+      "id": 4
+    },
+    {
+      "unit_id": "d9de0f2a-82ea-11e6-a6ca-bc305bf4bcd4",
+      "type": "open-course",
+      "title": "DJ脱口秀22",
+      "cover": "ca2c285e-5813-4ed3-a470-76cd69bfd6c6",
+      "cover_url": "http://betacs.101.com/v0.1/download/actions/direct?dentryId=ca2c285e-5813-4ed3-a470-76cd69bfd6c6&serviceName=dev_content_rn",
+      "description": null,
+      "start_time": null,
+      "end_time": null,
+      "user_count": 1870,
+      "is_top": true,
+      "extra": null,
+      "time_status": 2,
+      "icons": [],
+      "is_new": true,
+      "is_hot": true,
+      "type_name": "教学课",
+      "res_count": 3,
+      "id": 5
+    },
+    {
+      "unit_id": "d9de0f2a-82ea-11e6-a6ca-bc305bf4bcd4",
+      "type": "open-course",
+      "title": "DJ脱口秀33",
+      "cover": "ca2c285e-5813-4ed3-a470-76cd69bfd6c6",
+      "cover_url": "http://betacs.101.com/v0.1/download/actions/direct?dentryId=ca2c285e-5813-4ed3-a470-76cd69bfd6c6&serviceName=dev_content_rn",
+      "description": null,
+      "start_time": null,
+      "end_time": null,
+      "user_count": 1870,
+      "is_top": true,
+      "extra": null,
+      "time_status": 2,
+      "icons": [],
+      "is_new": true,
+      "is_hot": true,
+      "type_name": "教学课",
+      "res_count": 3,
+      "id": 6
+    }
+  ],
+  "quick_entry": [
+    {
+      "category_name": "快速入口",
+      "items": [
+        {
+          "image": "ee7c6da4-6c2f-45c9-950b-f147465f376c",
+          "title": "高等教育"
+        },
+        {
+          "image": "5780a3a4-cace-4a67-86b8-21004667eb6a",
+          "title": "精英教育"
+        },
+        {
+          "image": "bea26140-4e36-4bad-a78b-e0b609946259",
+          "title": "在线教育"
+        },
+        {
+          "image": "1d21d675-d830-4b16-b701-b0920c9645a1",
+          "title": "学前教育"
+        }
+      ],
+      "id": 1
+    }
+  ],
+  "shortcut": [
+    {
+      "icon": "http://betacs.101.com/v0.1/static/dev_content_rn/test/application_list_icon_lifelong@2x.png",
+      "title": "Sina",
+      "cmp": "http://www.sina.com.cn/",
+      "event": "",
+      "id": 1
+    },
+    {
+      "icon": "http://betacs.101.com/v0.1/static/dev_content_rn/test/application_list_icon_lifelong@2x.png",
+      "title": "Scan",
+      "cmp": "",
+      "event": "qrcode_scan",
+      "id": 2
+    },
+    {
+      "icon": "ee7c6da4-6c2f-45c9-950b-f147465f376c",
+      "title": "高等教育",
+      "cmp": "http://jackoder.wang",
+      "id": 3
+    }
+  ],
+  "sort_filter": [
+    {
+      "key": "price",
+      "type": "switchSort",
+      "text": "价格",
+      "options": [
+        {
+          "value": "Up"
+        },
+        {
+          "value": "Down",
+          "checked": true
+        }
+      ],
+      "id": 3
+    },
+    {
+      "key": "lesson",
+      "type": "singleSort",
+      "options": [
+        {
+          "text": "推荐",
+          "value": "rcmd",
+          "checked": true
+        }
+      ],
+      "id": 5
+    },
+    {
+      "key": "city",
+      "type": "comboSort",
+      "text": "城市",
+      "options": [
+        {
+          "text": "北京",
+          "title": "京",
+          "value": "bj"
+        },
+        {
+          "text": "厦门",
+          "value": "xm",
+          "checked": true
+        }
+      ],
+      "id": 6
+    },
+    {
+      "key": "fee",
+      "type": "singleFilter",
+      "text": "快递方式ABCDEFGHIJKLMNOPGRSTUVWXYZ",
+      "options": [
+        {
+          "text": "包邮",
+          "value": "包邮"
+        },
+        {
+          "text": "自取",
+          "value": "自取"
+        },
+        {
+          "text": "运费20",
+          "value": "运费20"
+        }
+      ],
+      "id": 7
     }
   ]
 }
